@@ -1,5 +1,6 @@
 +++
-paginate_by = 3
+title = "Examples"
+paginate_by = 20
 sort_by = "date"
-template = "pages.html"
+template = "examples.html"
 +++

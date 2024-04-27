@@ -1,0 +1,37 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Build and deploy on push
+jobs:
+  build:
+    name: shalzz/zola-deploy-action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # Install rust stable
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+          targets: wasm32-unknown-unknown
+
+      # Cache the built dependencies
+      - uses: Swatinem/rust-cache@v2.7.3
+        with:
+          save-if: ${{ github.event_name == 'push' }}
+
+      # Build the examples
+      - name: Build examples
+        run: ./build-examples.sh
+
+      # Deploy the page
+      - name: Build page and deploy
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          PAGES_BRANCH: gh-pages
+          REPOSITORY: tversteeg/chuot
+          TOKEN: ${{ secrets.DEPLOY_TOKEN }}

@@ -10,3 +10,8 @@ static/tinysearch_engine.js
 static/tinysearch_engine.d.ts
 static/tinysearch_engine_bg.wasm.d.ts
 static/package.json
+tmp
+/content/examples/*
+!_index.md
+/static/wasm/*
+!.gitkeep

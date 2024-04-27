@@ -1,4 +1,4 @@
-base_url = "https://tversteeg.nl/chuot-website"
+base_url = "https://tversteeg.nl/chuot"
 
 title = "Chuột"
 description = "Chuột is an AGPL licensed and opinionated game engine for 2D pixel-art games."
@@ -50,7 +50,6 @@ menu = [
     {url = "examples", name = "Examples", slash = true, blank = false, size="s110"},
 ]
 menu_footer = [
-    {url = "", name = "About", slash = true, blank = false},
     {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true},
 ]
 
@@ -80,7 +79,7 @@ headhr = false # show or hide horizontal rule below header
 foothr = true # show or hide horizontal rule above footer
 
 ### $CURRENT_YEAR and $SITE_TITLE can be used anywhere within the copyright, you can change their position or you can also delete them and type whatever you want instead.
-#copyright = false # set to false to disable the copyright.
+copyright = false # set to false to disable the copyright.
 #copyright_override = '© 2019-$CURRENT_YEAR $SITE_TITLE'
 #copyright_override = '© $CURRENT_YEAR $SITE_TITLE • Website content is licensed <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
 
@@ -92,9 +91,8 @@ foothr = true # show or hide horizontal rule above footer
 ###############################################################################
 
 title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
-title_addition = "Fast & Lightweight Zola Theme" # a default value for title addition
-author = "Jake G" # Put Your Name here
-keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+title_addition = "Rust Game Engine" # a default value for title addition
+keywords = "Rust, Game Engine, Chuot" # used for the primary site index
 banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
 twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
 google = "Your Google Site verification code."
