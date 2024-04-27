@@ -8,7 +8,7 @@ template = "example.html"
 ${description}
 
 <script type="module">
-import init from "/wasm/${example}.js";
+import init from "../../wasm/${example}.js";
 window.addEventListener("load", () => {
   init();
 });
