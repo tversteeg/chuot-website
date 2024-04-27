@@ -1,5 +1,5 @@
 +++
 paginate_by = 3
 sort_by = "date"
-template = "pages.html"
+template = "index.html"
 +++
