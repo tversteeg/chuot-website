@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 });
 </script>
 
-<div style="width: 960px; margin-left: auto; margin-right: auto;">
+<div style="width: 720px; margin-left: auto; margin-right: auto;">
 <canvas id="chuot"></canvas>
 </div>
 
