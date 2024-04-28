@@ -31,3 +31,9 @@ fn main() {
   MyGame {}.run(chuot::load_assets!(), GameConfig::default()).unwrap();
 }
 ```
+
+<center><br/>
+
+[![Support Palestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg)](https://github.com/Safouene1/support-palestine-banner)
+
+</center>
