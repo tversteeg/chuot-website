@@ -46,8 +46,9 @@ smart_punctuation = true # `...` to `…`, `"quote"` to `“curly”` etc
 
 menu = [
 #    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
-    {url = "https://docs.rs/chuot", name = "Docs", slash = true, blank = false, size="s110"},
     {url = "examples", name = "Examples", slash = true, blank = false, size="s110"},
+    {url = "https://docs.rs/chuot", name = "Docs", slash = true, blank = false, size="s110"},
+    {url = "https://github.com/tversteeg/chuot", name = "Source", slash = true, blank = false, size="s110"},
 ]
 menu_footer = [
     {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true},
