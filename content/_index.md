@@ -15,20 +15,30 @@ Chuột is an AGPL licensed and opinionated game engine for 2D pixel-art games b
 ## Example usage
 
 ```rust
-use chuot::{PixelGame, Context, GameConfig};
+use chuot::{Config, Context, Game};
 
+/// Define a game state.
 struct MyGame;
 
-impl PixelGame for MyGame {
-  fn update(&mut self, ctx: Context) {}
+impl Game for MyGame {
+    /// Update the game, handle input, move enemies, etc.
+    fn update(&mut self, ctx: Context) {
+        // ..
+    }
 
-  fn render(&mut self, ctx: Context) {
-    ctx.text("font", "Hello world!").draw();
-  }
+    /// Render the game.
+    fn render(&mut self, ctx: Context) {
+        // Load a text asset and draw it
+        ctx.text("font", "Hello world!")
+            // Draw the text on the screen
+            .draw();
+    }
 }
 
 fn main() {
-  MyGame {}.run(chuot::load_assets!(), GameConfig::default()).unwrap();
+  let game = MyGame;
+
+  game.run(chuot::load_assets!(), Config::default());
 }
 ```
 
