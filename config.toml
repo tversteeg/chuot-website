@@ -109,6 +109,7 @@ seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twit
 
 feed = true # this adds the RSS feed icon in the footer.
 github = "tversteeg/chuot"
+matrix = "matrix.to/#/#chuot:matrix.org"
 #github_sponsor = "your-user-name"
 
 
