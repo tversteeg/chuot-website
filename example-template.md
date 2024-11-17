@@ -18,11 +18,13 @@ window.addEventListener("load", () => {
 <canvas id="chuot"></canvas>
 </div>
 
-[Source](https://github.com/tversteeg/chuot/blob/main/examples/${example}.rs)
+### [Source](https://github.com/tversteeg/chuot/blob/main/examples/${example}.rs)
 
 ```rust
 ${code}
 ```
+
+### Compatibility
 
 | Chuột Version | Example Works |
 | -- | -- |
