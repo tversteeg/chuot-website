@@ -23,3 +23,7 @@ window.addEventListener("load", () => {
 ```rust
 ${code}
 ```
+
+| Chuột Version | Example Works |
+| -- | -- |
+${versions}| [Unreleased](https://github.com/tversteeg/chuot) | ✅ |
