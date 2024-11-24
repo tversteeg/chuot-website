@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Tags that should get a badge when chuot compiles for it
-declare -a tags=("0.3.0")
+declare -a tags=("0.3.0" "0.3.1")
 
 set -eu
 
