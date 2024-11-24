@@ -59,7 +59,7 @@ for example in $(ls $DIR/examples | grep -e "\.rs$" | sed "s/\.rs//"); do
     export versions="${versions}| [$tag](https://github.com/tversteeg/chuot/releases/tag/v$tag) | "
 
     # Try to build the example to create a badge
-    if (cd "$VERSION_DIR" && cargo check --example "$example" 2> /dev/null); then
+    if (cd "$VERSION_DIR" && cargo check --target wasm32-unknown-unknown --release --example "$example" 2> /dev/null); then
       export versions="$versions ✅"
     else
       export versions="$versions 🚫"
