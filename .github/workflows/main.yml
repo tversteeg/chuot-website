@@ -35,7 +35,7 @@ jobs:
 
       # Deploy the page
       - name: Build page and deploy
-        uses: shalzz/zola-deploy-action@v0.19.2
+        uses: shalzz/zola-deploy-action@v0.23.4
         env:
           PAGES_BRANCH: gh-pages
           REPOSITORY: tversteeg/chuot
